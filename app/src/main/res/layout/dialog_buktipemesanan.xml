@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="15dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="PO. BANDUNG EXPRESS"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/textView11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Pemesan: "
+                android:layout_below="@+id/textView11"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvNamaPemesan"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView11"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No HP: "
+                android:id="@+id/textView12"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvJamBerangkat"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvJadwalBerangkat"
+                android:layout_toRightOf="@+id/textView16"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rute: "
+                android:id="@+id/textView14"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView12"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jadwal Berangkat: "
+                android:id="@+id/textView15"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tvRute"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jam Berangkat: "
+                android:id="@+id/textView16"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView15"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus: "
+                android:id="@+id/textView17"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView16"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipe Bus: "
+                android:id="@+id/textView18"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView17"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Kursi: "
+                android:id="@+id/textView19"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView18"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Penumpang: "
+                android:id="@+id/textView20"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView19"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Tiket: "
+                android:id="@+id/textView21"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tvNamaPenumpang"
+                android:layout_toLeftOf="@+id/tvNoKursi"
+                android:layout_toStartOf="@+id/tvNoKursi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvJadwalBerangkat"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvRute"
+                android:layout_toRightOf="@+id/textView15"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvRute"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView14"
+                android:layout_alignLeft="@+id/textView14"
+                android:layout_alignStart="@+id/textView14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvNoHP"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView4"
+                android:layout_toRightOf="@+id/textView12"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvBus"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView16"
+                android:layout_toRightOf="@+id/textView17"
+                android:layout_toEndOf="@+id/textView17" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvTipeBus"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView17"
+                android:layout_toRightOf="@+id/textView18"
+                android:layout_toEndOf="@+id/textView18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvNoKursi"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView18"
+                android:layout_toRightOf="@+id/textView18"
+                android:layout_toEndOf="@+id/textView18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvNamaPenumpang"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView20"
+                android:layout_alignLeft="@+id/textView21"
+                android:layout_alignStart="@+id/textView21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvNoTiket"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_below="@+id/textView21"
+                android:layout_alignLeft="@+id/textView21"
+                android:layout_alignStart="@+id/textView21" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan Bukti Pemesanan"
+        android:textColor="@color/white"
+        android:id="@+id/btnSimpan" />
+
+</LinearLayout>

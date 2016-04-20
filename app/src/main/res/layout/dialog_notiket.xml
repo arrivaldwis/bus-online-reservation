@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No Tiket Anda"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:id="@+id/textView11" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etKodeAktivasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:hint="Masukkan Kode Aktivasi"/>
+
+        <TextView
+            android:id="@+id/tvLangkah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Langkah-Langkah berikutnya:\n\n1. Salin Kode Tiket\n2. Pilih Menu 'Download Bukti' lalu masukkan kode tiket untuk mendownload bukti pemesanan anda\n\n Terimakasih telah menggunakan jasa kami :)"
+            android:layout_below="@+id/etKodeAktivasi"
+            android:layout_alignLeft="@+id/etKodeAktivasi"
+            android:layout_alignStart="@+id/etKodeAktivasi"
+            android:layout_alignRight="@+id/etKodeAktivasi"
+            android:layout_alignEnd="@+id/etKodeAktivasi" />
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tvLangkah"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="OK"
+            android:layout_alignLeft="@+id/tvLangkah"
+            android:layout_alignStart="@+id/tvLangkah"
+            android:layout_alignRight="@+id/tvLangkah"
+            android:layout_alignEnd="@+id/tvLangkah" />
+    </RelativeLayout>
+</LinearLayout>

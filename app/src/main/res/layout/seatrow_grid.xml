@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/seat_layout_screen_nor_avl" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_image"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_alignRight="@+id/item_image"
+        android:layout_alignEnd="@+id/item_image"
+        android:layout_alignLeft="@+id/item_image"
+        android:layout_alignStart="@+id/item_image">
+    </TextView>
+
+</RelativeLayout>

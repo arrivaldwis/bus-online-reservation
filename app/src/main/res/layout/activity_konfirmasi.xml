@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.proj.bandungexpress_new.KonfirmasiActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/scrollView"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/btnKonfirmasi"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/etKodeAktivasi"
+                android:hint="Kode Verifikasi"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/btnCek"
+                android:layout_toStartOf="@+id/btnCek" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/etNamaPengirim"
+                android:layout_marginTop="15dp"
+                android:hint="Nama Pengirim"
+                android:layout_below="@+id/etKodeAktivasi"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/etNoIdentitas"
+                android:layout_marginTop="15dp"
+                android:hint="No Identitas"
+                android:layout_below="@+id/etNamaPengirim"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/etNoRekening"
+                android:layout_marginTop="15dp"
+                android:hint="No Rekening"
+                android:layout_below="@+id/etNoIdentitas"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rekening Tujuan"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/etNoRekening"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spRekeningTujuan"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/textView24"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"></Spinner>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/etTotalHarga"
+                android:layout_marginTop="15dp"
+                android:hint="Total Harga"
+                android:enabled="false"
+                android:layout_below="@+id/spRekeningTujuan"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/etTotalBayar"
+                android:layout_marginTop="15dp"
+                android:hint="Total Bayar"
+                android:layout_below="@+id/etTotalHarga"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tanggal Pemesanan"
+                android:id="@+id/textView22"
+                android:layout_below="@+id/etTotalBayar" />
+
+            <TextView
+                android:onClick="setTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Pilih Tanggal"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/tvTanggal"
+                android:layout_below="@+id/textView22"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Bukti Bayar"
+                android:id="@+id/textView"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/tvTanggal"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/btnUnggah"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unggah Bukti Transfer"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="5dp"
+                />
+
+            <Button
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cek"
+                android:id="@+id/btnCek"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/etKodeAktivasi" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi"
+        android:id="@+id/btnKonfirmasi"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
